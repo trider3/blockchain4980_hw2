@@ -10,4 +10,4 @@ As interesting as the databases were for the base cases, I used them immensely f
 
 # INSTRUCTIONS
 
-running the program is very straightforward. The first time you execute the program you won't need db downloaded, the .conn sommand in the python script will create it by itself. Run the hw2_dbgen.py file and once that is done, you can run the hw2_thomas_rider.py file. 
+running the program is very straightforward. The first time you execute the program you won't need db downloaded, the .conn command in the python script will create it by itself. Run the hw2_dbgen.py file and once that is done, you can run the hw2_thomas_rider.py file. 
