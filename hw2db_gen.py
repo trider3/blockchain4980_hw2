@@ -11,12 +11,12 @@ p = inflect.engine()
 
 
 def table_init():
-    cur.execute("DROP TABLE passwords;")
-    cur.execute("DROP TABLE other_char;")
+    #cur.execute("DROP TABLE passwords;")
+    #cur.execute("DROP TABLE other_char;")
     cur.execute("CREATE TABLE IF NOT EXISTS passwords (original TEXT, hash TEXT);")
     cur.execute("CREATE TABLE IF NOT EXISTS other_char (pw TEXT);")
-    for i in range(1, 20):
-        cur.execute("DROP TABLE {0}_char;".format(p.number_to_words(i)))
+    for i in range(1, 21):
+        #cur.execute("DROP TABLE {0}_char;".format(p.number_to_words(i)))
         cur.execute("CREATE TABLE IF NOT EXISTS {0}_char (pw TEXT);".format(p.number_to_words(i)))
 
 
